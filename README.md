@@ -1,18 +1,25 @@
-# stereodemux
+# wfm-tools
 
-Decode the stereo separation from an FM multiplex carrier. Requires
-[liquid-dsp](https://github.com/jgaeddert/liquid-dsp).
+Some WFM-related demodulation tools.
+
+Required libraries: liquid-dsp, libsndfile
+
+## Compiling
+
+`cd` to any of the subdirectories and run:
+
+    ./autogen.sh && ./configure && make
+
+## fm-squash
+
+## stereodemux
+
+Decode the stereo separation from an FM multiplex carrier.
 
 Input: 16-bit FM demodulated PCM signal sampled at 171 kHz (or another rate
 specified with `-r`)
 
 Output: 16-bit stereo PCM at above rate
-
-## Compiling
-
-    make
-
-## Usage
 
 Listening to stereo broadcasts with `rtl_fm` and SoX:
 

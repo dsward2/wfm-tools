@@ -7,7 +7,7 @@
 #include <cstdlib>
 #include <complex>
 
-#include "liquid_wrappers.h"
+#include "../liquid_wrappers.h"
 
 const int   kBuflen             = 1024;
 const float kDefaultRate        = 171000.0f;
